@@ -10,6 +10,10 @@ Bob_Ross_Filtered.npy
 Generated_images.npy
 training_monitor.txt
 
+#Exclude these files from being ignored
+!/Models/generator_256.keras
+!/Models/discriminator_256.keras
+
 
 
 
