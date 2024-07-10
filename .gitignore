@@ -1,0 +1,17 @@
+# Ignore everything in these directories
+__pycache__/*
+Images/Gif_Data/*
+Images/Gif/*
+Models/*
+
+
+#Ignore these files
+Bob_Ross_Filtered.npy
+Generated_images.npy
+training_monitor.txt
+
+#Include excluded files again
+! Models/generator_256.keras
+
+
+
