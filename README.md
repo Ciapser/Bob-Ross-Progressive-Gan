@@ -17,6 +17,29 @@ Dataset of 5000 images in the style of Bob Ross was used to train the model.
 - Training dataset
 - Every phase model (only last generator and discriminator are present)
 
+## Explanation of concept
+### Gan - Generative adversarial networks
+Gans contains 2 network which are competing with each other. One of them is generator and the other one is discriminator. Generator is responsible for creating imagesout of noise, and discriminator is responsible for classificating the image to the fake or real label. 
+
+Discriminator is learned based on the real dataset and generator is learned based on discriminator error - if discriminator classified fake image as real, generator enforces pattern behind creation of that image.
+### ProgGan - Progressive Generative adversarial networks
+Basics Gans are not capable of creating images of high resolution. 
+Thats why Progressive Gan was intruduced. Instead of trying to create big lets say 256x256 image from the beginning, models are competing at smaller resolution: 4x4, then jumping to 8x8, 16x16 etc. 
+
+Thanks to that technique its possible for generator to learn how to create good quality high resolution image.
+
+Techniques which are used in ProGans for training:
+- Progressive growing,
+- WGAN loss with gradient penalty,
+- Fadein layers,
+- Std BatchNormalization,
+- Pixel Normalization,
+- Equalized learning rate,
+- specific weights initialization
+
+You can find more detailed information and explanations in the Credits and good articles section, which I highly encourage to read if you are interested in the topic.
+
+
 ## Usage
 ### Training model
 To train the network you should put dataset of RGB images in the numpy format, in the main project folder. By default it is named "Bob_Ross_Filtered.npy" , but you can change it in the script. Then run BobRoss_ProGan_Train.py. Training can be interrupted and renewed without losing progress [(1) Look into  Issues!]
