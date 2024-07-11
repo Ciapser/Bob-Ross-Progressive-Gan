@@ -7,7 +7,6 @@ Models/*
 
 #Ignore these files
 Bob_Ross_Filtered.npy
-Generated_images.npy
 training_monitor.txt
 
 #Exclude these files from being ignored
