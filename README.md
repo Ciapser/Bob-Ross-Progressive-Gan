@@ -44,8 +44,8 @@ There are some of randomly generated images from the generator
 
 ![alt text](https://github.com/Ciapser/Bob-Ross-Progressive-Gan/blob/master/Github_Readme_files/Generated_imgs_checkboard_2.png?raw=true)
 
-As you can see there are visible some artifacts or abstract views on images, however some images represents quite good quality and are very pleasent to the eye. 
-Even better results would be probably obtained if bigger dataset would be used.
+As you can see there are visible some artifacts or abstract views on images, however other images represents quite good quality and are very pleasent to the eye. 
+Even better results will be probably obtained if bigger dataset would be used.
 
 ### Outputs interpolation
 Here is gif showing smooth transition between few generated images.
