@@ -1,8 +1,4 @@
-#from NeuroUtils import ML_assets as ml
-import sys
-sys.path.insert(0,"C:\\Users\\Stacja_Robocza\\Desktop\\NeuroUtils\\NeuroUtils")
-import ML_assets as ml
-
+from NeuroUtils import ML_assets as ml
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
