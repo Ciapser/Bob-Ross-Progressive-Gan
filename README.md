@@ -7,27 +7,28 @@ It is based on Progressive Generative Adversarial Networks, which is variant of 
 
 Dataset of 5000 images in the style of Bob Ross was used to train the model. 
 
-Project contains scripts for:
+### Project contains scripts for:
 - Model training                            (BobRoss_ProGan_Train.py)
 - Reneweing training if it crashed          (Run_Reset.py)
 - creating assets for ReadMe presentation   (ReadMe_script.py)
 - Generating images                         (BobRoss_ImageGenerator.py)
 
-Due to the file size, project does not contains:
+### Due to the file size, project does not contains:
 - Training dataset
 - Every phase model (only last generator and discriminator are present)
 
 ## Usage
-- To train the network you should put dataset of RGB images in the numpy format, in the main project folder. By default it is named "Bob_Ross_Filtered.npy" , but you can change it in the script. Then run BobRoss_ProGan_Train.py. Training can be interrupted and renewed without losing progress [(1) Look into  Issues!]
+### Training model
+To train the network you should put dataset of RGB images in the numpy format, in the main project folder. By default it is named "Bob_Ross_Filtered.npy" , but you can change it in the script. Then run BobRoss_ProGan_Train.py. Training can be interrupted and renewed without losing progress [(1) Look into  Issues!]
 
     Hyperparameters can be adjusted in the main function
+### Generating images
+To generate images simply run BobRoss_ImageGenerator.py and images will be saved in the numpy format in project directory. To use this script you will need trained model which is available to download.
 
-- To generate images simply run BobRoss_ImageGenerator.py and images will be saved in the numpy format in project directory. To use this script you will need trained model which is available to download.
-
-    If you want to manipulate the images or view them you can use
-    ReadMe_script.py, however this is more customized to the needs of
-    this ReadMe file. But it contains some functions ready to view
-    generated images. 
+If you want to manipulate the images or view them you can use
+ReadMe_script.py, however this is more customized to the needs of
+this ReadMe file. But it contains some functions ready to view
+generated images. 
     
     !Beware that by running these scripts you will overwrite files in
     "Github_Readme_files" folder and "Generated_images.npy" in project
